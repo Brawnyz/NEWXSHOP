@@ -1,0 +1,739 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+}
+body{
+    background:linear-gradient(-45deg, #74634d,
+    #e6caa9,#e6caa9,#74634d);
+}
+header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    padding: 25px 70px;
+    background: rgb(0, 0, 0);
+    box-shadow: .1rem .5rem  1rem rgb(41, 41, 41);
+}
+.logo {
+    color: rgb(255, 255, 255);
+    font-size: 2rem; 
+    font-weight: 700;
+}
+.header .navbar a{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    margin-right: 2rem;
+    font-weight: 600;
+}
+.header .navbar a:hover{
+    color: rgb(202, 145, 20);
+    text-decoration: underline rgb(204, 143, 11);
+}
+
+.header .navbar i{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin-right: 2rem;
+    position: relative;
+    top:5px;
+}
+.header .navbar i:hover{
+    cursor: pointer;
+    color: rgb(204, 143, 11);
+}
+.home{
+    background-image: url(image/bg.png);
+    background-size: 100%;
+    padding-top: 70px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.home .container{
+    width: 80%;
+    height: 80%;
+    background: rgba(255, 255, 255,0.3 );
+    border-radius: 20px;
+}
+.home .main{
+    padding-top: 60px;
+    padding-left: 60px;
+}
+.home h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: rgb(168, 103, 18);
+    margin-bottom: 1rem;
+}
+.home span{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+.home p{
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    line-height: 2;
+    text-transform: lowercase;
+    width: 50rem;
+    margin-bottom: 2rem;
+}
+.home .btn{
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    background: lightgoldenrodyellow;
+    padding: .5rem 3rem;
+    border-radius: 3rem;
+    text-align: center;
+    box-shadow: .1rem .5rem 1rem rgb(36, 36, 36);
+    font-weight: 700;
+}
+
+ 
+.pictures{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 5rem;
+   
+}
+.pictures img{
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    border: 1px solid rgb(27, 27, 27);
+    box-shadow: .1rem .5rem 1rem rgb(0, 0, 0);
+}
+.pictures img:hover{
+    scale: 1.1;
+    cursor: pointer;  
+}
+
+.box img{
+    height: 12rem;
+    width: 12rem;
+    object-fit: cover;
+    box-shadow: .1rem .5rem 1rem rgb(177, 177, 177);
+}
+.featured{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem 8%;
+    
+}
+.featured h3{
+    font-size: 3rem;
+    color: black;
+    text-transform: uppercase;
+   padding: 60px 0;
+}
+.featured .boxcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    gap: 3rem;
+    
+}
+.featured .box{
+    display: flex;
+    flex-direction: column;
+}
+.featured .box img{
+    height: 15rem ;
+    width: 15rem;
+    box-shadow: .1rem .5rem 1rem rgb(0, 0, 0);
+    
+}
+.featured .box a{
+    font-size: 28px;
+    padding: 10px 0;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 1rem;
+}
+.featured .box a:hover{
+    text-decoration: underline;
+}
+
+.lastest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 7rem 8%;
+    margin-bottom: 70px;
+    
+}
+.lastest h3{
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+   padding: 60px 0;
+}
+.lastest .boxcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    object-fit: cover;
+    gap: 3rem;
+}
+.lastest .boxcontainer .box{
+    display: flex;
+    flex-direction: column;
+}
+.lastest .box a{
+    font-size: 22px;
+    padding: 10px 0;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.lastest .box a:hover{
+    text-decoration: underline;
+}
+
+.lastest .boxcontainer .box i{
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+}
+.lastest .boxcontainer .box p{
+    font-size: 18px;
+    color: rgb(58, 58, 58);
+}
+.lastest .boxcontainer:hover{
+    cursor: pointer;
+}
+.promo{
+    background: url(image/promo.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 15rem;
+    margin-bottom: 70px;
+}
+.promo .content{
+    padding-left: 400px;
+}
+.promo h1{
+    font-size: 50px;
+    color: rgb(167, 104, 10);
+    text-transform: uppercase;
+}
+.promo p{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    line-height: 2;
+    text-transform: lowercase;
+    margin-bottom: 2rem;
+    width: 550px;
+}
+.promo .btn{
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    background: lightgoldenrodyellow;
+    padding: .5rem 3rem;
+    border-radius: 3rem;
+    text-align: center;
+    box-shadow: .1rem .5rem 1rem rgb(36, 36, 36);
+    font-weight: 700; 
+}
+
+.promo .btn:hover{
+    scale: 1.1;
+}
+.bg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.clients{
+    padding-top:90px ;
+}
+.clients h1{
+    font-size: 40px;
+   padding-left: 70px; 
+   text-decoration: overline;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 0;
+}
+.card{
+    cursor: pointer;
+    width: 350px;
+    height: 350px;
+    border-radius: 20%;
+    position: relative;
+}
+
+
+.front , .back{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+    position: absolute;
+    padding: 1rem 0;
+    backface-visibility: hidden;
+}
+
+
+.front{
+    border: 1px solid black;
+    color: gray;  
+    font-size: 10px; 
+     font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+.front p{
+   font-size: 50px;
+   color: gold;
+   font-weight: 900;
+   margin: 12px;
+}
+.front img{
+    height: 50%;
+    width: 50%;
+    border-radius: 70%;
+    object-fit: cover;
+    box-shadow: none;
+}
+
+.back{
+    color: rgb(0, 0, 0);
+    transform: rotateY(-180deg);
+    border: 1px solid black;
+    gap: 30px;
+}
+.back p{
+    padding-right: 20px; 
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.card:hover .front{
+    transform: rotateY(180deg);
+}
+.card:hover .back{
+    transform: rotateY(0deg);
+}
+
+.clients .cmt{
+    padding-left: 50px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.clients input{
+    margin-left:50px;
+    margin-bottom:200px;
+    padding: 20px 1060px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background: black;
+    padding: 3rem 0;
+}
+.footer .boxcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 3rem;
+    padding: 3rem 5rem;
+    width: 100%;
+    border-bottom: .1rem solid #999 ;
+    margin-bottom: 2rem;
+}
+.footer .boxcontainer .box{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.footer .boxcontainer .box h3{
+    color: aliceblue;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.footer .boxcontainer .box a{
+    font-size: 1.2rem;
+    color: rgb(70, 70, 70);
+    text-transform: lowercase;
+}
+.footer .boxcontainer .box p{
+    font-size: 1.1rem;
+    color: rgb(70, 70, 70);
+    text-transform: lowercase;
+}
+
+.footer .boxcontainer .box a:hover{
+    text-decoration: underline;
+}
+.footer .create{
+    color: rgb(70, 70, 70);
+    text-align: center;
+    font-size: 22px;
+}
+.footer .create span{
+    color: aliceblue;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PRODUCTS PAGE 2 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 15% 3rem ;
+    flex-direction: column;
+   
+}
+.products .products-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.products .products-header h3{
+    font-size: 2rem;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.products .products-header .default{
+    padding: .5rem;
+    background: 5rem;
+    border: 1px solid black;
+}
+.products .products-header .default:hover{
+    cursor: pointer;
+}
+
+
+.products .boxcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    object-fit: cover;
+    gap: 2rem;
+    
+}
+.products .boxcontainer .box{
+    display: flex;
+    flex-direction: column;
+    
+}
+.products .box img{
+    box-shadow: .1rem .5rem 1rem rgb(0, 0, 0);
+}
+.products .box a{
+    font-size: 22px;
+    padding: 10px 0;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.products .box a:hover{
+    text-decoration: underline;
+}
+
+.products .boxcontainer .box i{
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+}
+.products .boxcontainer .box p{
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+.pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 0 10rem 0;
+}
+.pages .page{
+    font-size: 22px;
+   
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+}
+.pages .page a{
+    color: black;
+}
+.pages .page:hover{
+    color: aliceblue;
+    background: rgb(248, 194, 123);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT PAGE */
+
+
+
+
+
+
+
+
+
+
+
+
+.about {
+    padding: 160px 100px;
+}
+
+.about .aboutus h1{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    text-align: center;
+    line-height: 80px;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    padding-bottom: 40px;
+}
+.about .whyus{
+  
+    height:500px ;
+    background-image: url(image/about.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+ 
+.whyus .para h3{
+    font-size: 28px;
+    line-height: 50px;
+    text-decoration: overline;
+    padding-left: 195px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.whyus .para p{
+    padding-left: 195px;
+    padding-right:  550px; 
+    
+}
+.about .whoarewe{
+    width: 100%;
+    height: 350px;
+    background:linear-gradient(-45deg, #74634d,
+    #af9271,#e6caa9,#e6caa9,#bea17f,#74634d);
+    margin-top: 20px;
+    
+}
+.about .whoarewe .cont{
+    padding: 20px 25px;
+}
+.whoarewe .cont h1{
+    text-decoration: overline;
+    padding-bottom: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DETAIL PAGE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 10rem 10%;
+}
+.details .image img{
+    height: 25rem;
+    width: 25rem;
+    border: 1px solid black;
+}
+.details .content{
+    height: 25rem;
+    height: 25rem;
+    padding: 5px 5px;
+   
+}
+.details .content span{
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+     line-height: 2.5rem;
+}
+.details .content h1{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+}
+.details .content .prix{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  font-size: 25px;
+  color: red;
+}
+.details .content .prix span{
+    font-size: 18px;
+    text-decoration: line-through;
+    color: rgb(75, 75, 75);
+    
+}
+.details .content .flex{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 15px;
+}
+.details .content .flex .size{
+    border: 1px solid black;
+    height: 100%;
+    width: 150px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.details .content .flex .input{
+    border: 1px solid black;
+    height: 100%;
+    width: 50px;
+    font-size: 16px;
+    color: rgb(61, 61, 61);
+    font-weight: 600;
+    padding: 0 3px;
+    
+}
+
+.details .content .add a {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    text-transform: capitalize;
+    height: 40px;
+    width: 150px;
+    background: rgb(255, 218, 94);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid;
+
+}
+
+.details .content .add a:hover{
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 218, 94);
+    color:rgb(255, 218, 94);
+}
+.details .content h3{
+    font-size: 20px;
+    padding: 18px 0 7px 0;
+}
+
